@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { store, persistor } from './store';
 import { theme } from './theme';
 import Counter from './components/Counter';
+import Posts from './components/Posts';
 import Layout from './components/Layout';
 
 const App: React.FC = () => {
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <CssBaseline />
           <Layout>
             <Counter />
+            <Posts />
           </Layout>
         </ThemeProvider>
       </PersistGate>
